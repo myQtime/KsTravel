@@ -1,0 +1,182 @@
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header-bg {
+  background: url("../img/Hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+}
+
+.header select {
+  opacity: 0.6;
+}
+
+.popSearch {
+  margin-top: -0.25rem;
+}
+
+.popSearch button {
+  width: 40%;
+}
+
+@media (min-width: 768px) {
+  .popSearch button {
+    width: 20%;
+  }
+}
+
+.popSearch .btn1 {
+  background: #8A82CC;
+}
+
+.popSearch .btn1:hover {
+  background: #7970c5;
+}
+
+.popSearch .btn2 {
+  background: #FFA782;
+}
+
+.popSearch .btn2:hover {
+  background: #ff8e5e;
+}
+
+.popSearch .btn3 {
+  background: #ffe552;
+}
+
+.popSearch .btn3:hover {
+  background: #f5d000;
+}
+
+.popSearch .btn4 {
+  background: #559AC8;
+}
+
+.popSearch .btn4:hover {
+  background: #3d89bc;
+}
+
+.dashed {
+  border-bottom: 2px dashed #559AC8;
+}
+
+.card .fa-clock {
+  color: #8a82cc;
+}
+
+.card .fa-map-marker-alt {
+  color: #eb9f13;
+}
+
+.card .fa-mobile-alt {
+  color: #559ac8;
+}
+
+.card .fa-tags {
+  color: #ffee00;
+}
+
+.card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.photo {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+
+.card-Name {
+  width: 80%;
+}
+
+.footer {
+  background: #559AC8;
+  height: 90px;
+}
+
+.gotop {
+  position: fixed;
+  bottom: 130px;
+  right: 50px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+  opacity: 100;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 0.5s;
+          animation: fadeOut 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=all.css.map */

@@ -1,0 +1,126 @@
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header-bg{
+    background: url('../img/Hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 380px;
+}
+
+.header{
+    select{
+        opacity: 0.6;
+    }
+}
+
+.popSearch{
+    margin-top:  -0.25rem;
+    button{
+        width: 40%;
+        @media (min-width: 768px) {
+            width: 20%;
+        }        
+    }
+    .btn1{
+        background: #8A82CC;
+        &:hover{
+            background: darken($color: #8A82CC, $amount: 5);
+        }
+    }
+    .btn2{
+        background: #FFA782;
+        &:hover{
+            background: darken($color: #FFA782, $amount: 7);
+        }
+    }
+    .btn3{
+        background: #ffe552;
+        &:hover{
+            background: darken($color: #ffe552, $amount: 18);
+        }
+    }
+    .btn4{
+        background: #559AC8;
+        &:hover{
+            background: darken($color: #559AC8, $amount: 7);
+        }
+    }
+}
+
+.dashed{
+    border-bottom: 2px dashed #559AC8;
+}
+
+.card{
+    .fa-clock{
+        color: #8a82cc;
+    }
+    .fa-map-marker-alt{
+        color: #eb9f13;
+    }
+    .fa-mobile-alt{
+        color: #559ac8;
+    }
+    .fa-tags{
+        color: #ffee00;
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
+
+.photo{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition-duration: 300ms;
+    }
+}
+
+.card-Name{
+    width: 80%;
+}
+
+.footer{
+    background: #559AC8;
+    height: 90px;
+}
+
+.gotop{
+    position: fixed;
+    bottom: 130px;
+    right: 50px;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: fadeIn 0.5s ; 
+    opacity: 100;
+}
+
+.fadeOut{
+    animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn{
+    0% {opacity:0;
+        transform: translateY(0px);}
+    100% {opacity:1;
+        transform: translateY(30px);
+}}
+
+@keyframes fadeOut{
+    0% {opacity:1;
+        transform: translateY(30px);}
+    100% {opacity:0;
+        transform: translateY(0px);
+}}
