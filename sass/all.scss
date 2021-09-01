@@ -96,31 +96,34 @@ body{
 
 .gotop{
     position: fixed;
-    bottom: 130px;
+    bottom: 150px;
     right: 50px;
-    transform: translateY(30px);
+    transform: translateY(50px);
     opacity: 0;
 }
 
 .fadeIn{
-    animation: fadeIn 0.5s ; 
+    animation: fadeIn 1s ; 
     opacity: 100;
 }
 
 .fadeOut{
-    animation: fadeOut 0.5s;
+    animation: fadeOut 1s;
 }
 
 @keyframes fadeIn{
     0% {opacity:0;
-        transform: translateY(0px);}
+        transform: translateY(0px);
+        }
     100% {opacity:1;
-        transform: translateY(30px);
+        transform: translateY(50px);
+        
 }}
 
 @keyframes fadeOut{
     0% {opacity:1;
-        transform: translateY(30px);}
+        transform: translateY(50px);
+        }
     100% {opacity:0;
         transform: translateY(0px);
 }}

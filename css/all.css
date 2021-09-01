@@ -110,22 +110,22 @@ body {
 
 .gotop {
   position: fixed;
-  bottom: 130px;
+  bottom: 150px;
   right: 50px;
-  -webkit-transform: translateY(30px);
-          transform: translateY(30px);
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   opacity: 0;
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
   opacity: 100;
 }
 
 .fadeOut {
-  -webkit-animation: fadeOut 0.5s;
-          animation: fadeOut 0.5s;
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -136,8 +136,8 @@ body {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }
 
@@ -149,16 +149,16 @@ body {
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }
 
 @-webkit-keyframes fadeOut {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   100% {
     opacity: 0;
@@ -170,8 +170,8 @@ body {
 @keyframes fadeOut {
   0% {
     opacity: 1;
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
   }
   100% {
     opacity: 0;

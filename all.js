@@ -207,14 +207,21 @@ gotop.addEventListener('click',function(e){
 window.onscroll = function(){gotopShow()};
 
 function gotopShow() {
-    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+    if (document.documentElement.scrollTop > 450) {
         gotop.classList.remove('d-none','fadeOut');
         gotop.classList.add('fadeIn');
-    } else {
-        gotop.classList.add('fadeOut');
+    } else if(document.documentElement.scrollTop < 450){
         gotop.classList.remove('fadeIn');
+        gotop.classList.add('fadeOut');
     }
-    if (document.body.scrollTop == 0 && document.documentElement.scrollTop == 0){
-        setTimeout(function(){gotop.classList.add('d-none')},250);
-    }
+    ///原程式碼bug  當 0 < scollTop < 450 , gotop看不見但仍存在 
+    // if (document.body.scrollTop == 0 && document.documentElement.scrollTop == 0){
+    //     setTimeout(function(){gotop.classList.add('d-none')},250);
+    // }
 }
+
+/// gotop元件跑完fadeOut動畫後消失
+gotop.addEventListener('animationend',function(){
+    if(gotop.classList.contains('fadeOut')){
+            gotop.classList.add('d-none');}
+        })
